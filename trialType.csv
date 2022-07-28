@@ -1,0 +1,11 @@
+trialNumber,trial,cueType,probeType,trialType,corrResponse
+1,AX,A,X,target,k
+2,AX,A,X,target,k
+3,AX,A,X,target,k
+4,AX,A,X,target,k
+5,AX,A,X,target,k
+6,AX,A,X,target,k
+7,AX,A,X,target,k
+8,BX,B,X,probeWrong,d
+9,AY,A,Y,cueWrong,d
+10,BY,B,Y,bothWrong,d

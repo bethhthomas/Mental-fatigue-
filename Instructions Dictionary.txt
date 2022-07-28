@@ -1,0 +1,24 @@
+instrDict = { "1": "Welcome to the session and thank you for volunteering to take part in this study \n\nThis session is a training session where you will learn about the different tasks that you will need to complete in the testing session.\n\n Press the right arrow on your keyboard to continue",
+              "2": "If you want to quit at any point, press the escape key. If you quit your data will not be saved and you will be asked to repeat the session \n\nPlease make sure that you are sitting comfortably in a quiet environment where you will not be interrupted. There will be multiple chances for you to take rest breaks if you need to. Please also ensure that your computer is connected to a power source and will not enter sleep mode\n\n Press the right arrow to continue, or the left arrow to go back to the previous screen",
+              "3": "Today you will learn four different tasks: \n\n1. AX-CPT \n2. n-back \n3. visual search \n4. mental rotation \n\n Press the right arrow to continue to the AX-CPT task instructions",
+              "4": "In this task you will see a series of letters one after another \n\nFor example:\n A - W - N - X \n (where - is a blank screen)\n\n The first letter will be red \n Then there will be two white letters \n The final letter will also be red \n\n Press the right arrow to continue, or the left arrow to go back to the previous screen",
+              "5": "If the first red letter is an A and the second red letter is an X, press 'k' on your keyboard. For any other combinations of letters, press 'd' \n\n For example: \n if you see A - U - N - X you should press 'k' \n if you see B - O - J - X you should press 'd' \n if you see F - D - Z - I you should press 'd' \n if you see A - L - C - Z you should press 'd' \n\n Press the right arrow to continue, or the left arrow to go back to the previous screen",
+              "6": "When you respond correctly, 'correct' will appear \n\n When you respond incorrectly, 'incorrect' will appear \n\n You must respond as quickly and accurately as possible \n\n Press 'k' to begin the five minute practice session, or press the left arrow to go back to the previous screen",
+              "7": "In this task, you will see a series of letters one after another. Your task is to decide whether the letter on the screen is the same as the one 3 letters ago \n\n If it is the same, press 'k' \n If if is not the same, press 'd' \n\n Press the right arrow to continue",
+              "8": "For example, in the sequence: \n B - F - G - B - P - B - F \n you would press \n d - d - d - k - d - d - d \n\n Press the right arrow to continue, or the left arrow to go back to the previous screen",
+              "9": "When you respond correctly, 'correct' will appear \n\n When you respond incorrectly, 'incorrect' will appear \n\n You must respond as quickly and accurately as possible \n\n Press 'k' to begin the five minute practice session, or press the left arrow to go back to the previous screen",
+              "10": "In this task you will be presented with lots of letters on a page \n\n The letters will be in different places and at different angles\n\n Press the right arrow to continue",
+              "11": "Your task is to press 'k' if the letter T is on the screen\n\n If the letter T is not on the screen, press 'd'\n\n Press the right arrow to continue, or the left arrow to go back to the previous screen",
+              "12": "You must complete this task as quickly and accurately as possible \n\n Press 'k' to begin the five minute practice session, or press the left arrow to go back to the previous screen",
+              "13": "In this task, you will see a series of pictures\n\n Each picture has two shapes in it \n\n Your task is to decide if the two shapes are the same \n\nIf the two shapes are the same, press 'k'. If the two shapes are different, press 'd' \n\nPress the right arrow to continue",
+              "14": "The way the shapes are oriented will change. Here are two matching shapes that are oriented the same way:\n\n\n\n\n\n\n\n\n\nPress the right arrow to continue, or the left arrow to go back to the previous screen",
+              "15": "Here are two matching shapes that are oriented differently:\n\n\n\n\n\n\n\n\n\nPress the right arrow to continue, or the left arrow to go back to the previous screen",
+              "16": "Here are two shapes that do not match:\n\n\n\n\n\n\n\n\n\nPress the right arrow to continue, or the left arrow to go back to the previous screen",
+              "17": "When you respond correctly, 'correct' will appear \n\n When you respond incorrectly, 'incorrect' will appear \n\n You must respond as quickly and accurately as possible \n\n Press 'k' to begin the five minute practice session, or press the left arrow to go back to the previous screen \n\n Please note there may be a delay while this task loads"
+}
+
+
+currentInstr = 1
+
+
+
