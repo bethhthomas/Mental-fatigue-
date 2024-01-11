@@ -4154,7 +4154,7 @@ function endRoutineBegin(snapshot) {
     endClock.reset(); // clock
     frameN = -1;
     // update component parameters for each repeat
-    end_text.setText("End of Training Session\n\nThank you for completing the training session\n\nPlease contact the experimenter now to confirm that you have completed the training session\n\nThey will then send you the link to the testing session which you will need to complete in 48 hours' time (2 days from now)\n\nPlease press the space bar on your keyboard to finish the session");
+    end_text.setText("End of Training Session\n\nThank you for completing the training session)\n\nPlease press the space bar on your keyboard to finish the session");
     end_resp.keys = undefined;
     end_resp.rt = undefined;
     _end_resp_allKeys = [];
