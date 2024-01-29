@@ -372,8 +372,8 @@
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
-        <Param val="if loopTimer.getTime() &gt; 300:&amp;#10;    currentLoop.finished = True" valType="extendedCode" updates="constant" name="Each Frame"/>
-        <Param val="if ((loopTimer.getTime() &gt; 300)) {&amp;#10;    currentLoop.finished = true;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="if loopTimer.getTime() &gt; 120:&amp;#10;    currentLoop.finished = True" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="if ((loopTimer.getTime() &gt; 120)) {&amp;#10;    currentLoop.finished = true;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
         <Param val="psychoJS.experiment.addData(&quot;elapsed.time&quot;, elapsedTime.getTime());&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
@@ -930,15 +930,15 @@
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="Back2minus1=[]&amp;#10;Back2minus2=[]&amp;#10;Back2minus3=[]" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="Back2minus1 = [];&amp;#10;Back2minus2 = [];&amp;#10;Back2minus3 = [];&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="function choice(arr) {&amp;#10;  return arr[Math.floor(Math.random() * arr.length)];&amp;#10;}&amp;#10;&amp;#10;letters = [&quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot;F&quot;, &quot;G&quot;, &quot;H&quot;, &quot;J&quot;, &quot;K&quot;, &quot;L&quot;, &quot;M&quot;, &quot;N&quot;, &quot;P&quot;, &quot;Q&quot;, &quot;R&quot;, &quot;S&quot;, &quot;T&quot;, &quot;V&quot;, &quot;W&quot;, &quot;X&quot;, &quot;Z&quot;];&amp;#10;nletter = choice(letters);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="letters = ['B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Z']&amp;#10;nletter=choice(letters)&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
-        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="function choice(arr) {&amp;#10;  return arr[Math.floor(Math.random() * arr.length)];&amp;#10;}&amp;#10;&amp;#10;letters = [&quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot;F&quot;, &quot;G&quot;, &quot;H&quot;, &quot;J&quot;, &quot;K&quot;, &quot;L&quot;, &quot;M&quot;, &quot;N&quot;, &quot;P&quot;, &quot;Q&quot;, &quot;R&quot;, &quot;S&quot;, &quot;T&quot;, &quot;V&quot;, &quot;W&quot;, &quot;X&quot;, &quot;Z&quot;];&amp;#10;nletter = choice(letters);&amp;#10;" if ((nletter == Back2minus1)) {&amp;#10; nletter = choice(letters);&amp;#10;    }&amp;#10;} else {&amp;#10;    if ((trialType === &quot;target&quot;)) {&amp;#10;        nletter = Back2minus1;&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="if trialType=='nonTarget':amp;#10;   "letters = ['B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Z']&amp;#10;nletter=choice(letters)&amp;#10;" if nletter==Back2minus1:&amp;#10; n;etter=choice(letters)&amp;10;elif trialType=='target':&amp;#10; nletter=Back2minus1" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Both" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
-        <Param val="Back2minus3 = Back2minus2;&amp;#10;Back2minus2 = Back2minus1;&amp;#10;Back2minus1 = nletter;&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
-        <Param val="Back2minus3=Back2minus2&amp;#10;Back2minus2=Back2minus1&amp;#10;Back2minus1=nletter" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="Back2minus1 = nletter;amp;10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="Back2minus1=nletter" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="NBackFirst3Trials_code" valType="code" updates="None" name="name"/>
       </CodeComponent>
